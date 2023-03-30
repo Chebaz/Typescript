@@ -2,25 +2,38 @@
  * START: Follow the instructions below.
  */
 
-// Add type annotations to each of these variables.
+// Add types to this function declaration.
 
-let country: string = "Italy";
+function doubleThePopulation(value: number) {
+  return value * 2;
+}
 
-let year: undefined = undefined;
+// Correct or remove the function calls which cause type errors.
 
-let averageTemperature: number = 23.6;
+doubleThePopulation(5);
 
-let visited: boolean = true;
+doubleThePopulation(8_526);
 
-let currency: null = null;
+// Alter this function so the `language2` parameter is optional.
+// Hint: Check `language2` is not `undefined` before passing it to `console.log()`.
 
-// Change the type annotations on these variables so they are correct.
+function languagesSpoken(
+  country: string,
+  language1: string,
+  language2?: string
+): void {
+  console.log(`The languages spoken in ${country} are:`);
 
-let population: number = 47_450_795;
+  console.log(language1);
 
-let isSummer: boolean = false;
+  console.log(language2);
+}
 
-let languages: string = "Spanish, English";
+languagesSpoken("Colombia", "Spanish", "English");
+
+languagesSpoken("Greece", "Greek");
+
+languagesSpoken("New Zealand", "English", "Māori");
 
 // ----
 
