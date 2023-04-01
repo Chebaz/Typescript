@@ -17,9 +17,3 @@ var countryC = {
     code: "ES",
     population: 47450795,
 };
-var currencyData = {
-    name: "Euro",
-    code: "EUR",
-    symbol: "€",
-};
-currencyData.code = "GGG";
